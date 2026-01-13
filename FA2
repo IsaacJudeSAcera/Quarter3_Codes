@@ -1,0 +1,24 @@
+Dataset: monthly revenue of a company each week
+REVENUE = [
+   [12000, 13500, 14000, 15000],   // Month 1
+   [11000, 12500, 13000, 14500],   // Month 2
+   [13000, 14000, 15000, 16000]    // Month 3
+]
+Row = months
+Column = weeks
+4.Print REVENUE [0][2]
+REVENUE [0][2]=”90000”
+
+total = 0
+count = 0
+
+for each month in revenue
+   for each week in month
+      total = total + week
+      count = count + 1
+   end for
+end for
+
+average = total / count
+print average
+I chose the monthly revenue dataset because it shows how a company tracks income over time. Using month 1 as a row and weeks as columns makes it easy to see how revenue changes each week within the month. The 2D array helps organize the data neatly and allows quick access or updates to specific values. It also makes calculating totals or averages for a month simple and efficient.
